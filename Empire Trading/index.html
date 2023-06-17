@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Empire Tarding</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Empire Tarding" name="keywords" />
+    <meta content="Empire Tarding" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Libraries -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="lib/slick/slick.css" rel="stylesheet" />
+    <link href="lib/slick/slick-theme.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Top bar Start -->
+    <div class="top-bar">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6">
+            <i class="fa fa-envelope"></i>
+            support@email.com
+          </div>
+          <div class="col-sm-6">
+            <i class="fa fa-phone-alt"></i>
+            +012-000-0000
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Top bar End -->
+
+    <!-- Nav Bar Start -->
+    <div class="nav">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+          <a href="#" class="navbar-brand">MENU</a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarCollapse"
+          >
+            <div class="navbar-nav mr-auto">
+              <a href="index.html" class="nav-item nav-link active">Home</a>
+              <a href="product-list.html" class="nav-item nav-link">Products</a>
+              <a href="product-detail.html" class="nav-item nav-link"
+                >Product Detail</a
+              >
+              <a href="cart.html" class="nav-item nav-link">Cart</a>
+              <a href="checkout.html" class="nav-item nav-link">Checkout</a>
+              <a href="my-account.html" class="nav-item nav-link">My Account</a>
+              <div class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  >More Pages</a
+                >
+                <div class="dropdown-menu">
+                  <a href="wishlist.html" class="dropdown-item">Wishlist</a>
+                  <a href="login.html" class="dropdown-item"
+                    >Login & Register</a
+                  >
+                  <a href="contact.html" class="dropdown-item">Contact Us</a>
+                </div>
+              </div>
+            </div>
+            <div class="navbar-nav ml-auto">
+              <div class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  >User Account</a
+                >
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Login</a>
+                  <a href="#" class="dropdown-item">Register</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Nav Bar End -->
+
+    <!-- Bottom Bar Start -->
+    <div class="bottom-bar">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-md-3">
+            <div class="logo">
+              <a href="index.html">
+                <img src="img/logo.png" alt="Logo" />
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="search">
+              <input type="text" placeholder="Search" />
+              <button><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="user">
+              <a href="wishlist.html" class="btn wishlist">
+                <i class="fa fa-heart"></i>
+                <span>(0)</span>
+              </a>
+              <a href="cart.html" class="btn cart">
+                <i class="fa fa-shopping-cart"></i>
+                <span>(0)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bottom Bar End -->
+
+    <!-- Main Slider Start -->
+    <div class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <nav class="navbar bg-light">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="fa fa-home"></i>Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="fa fa-shopping-bag"></i> Search by Vehicle</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="fa fa-plus-square"></i>Search by VIN</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="fa fa-female"></i>Brands</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="fa fa-child"></i>Car Makers</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="fa fa-tshirt"></i>Car Insurance</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="fa fa-mobile-alt"></i>Gadgets & Accessories</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="fa fa-microchip"></i>Electronics & Accessories</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-md-6">
+            <div class="header-slider normal-slider">
+              <div class="header-slider-item">
+                <img
+                  src="https://www.alke.com/images/stories/articles/0634/357/cab-alke-electric-vehicles.jpg"
+                  alt="Slider Image"
+                  class="w-80"
+                />
+                <div class="header-slider-caption">
+                  <p>Some text goes here that describes the image</p>
+                  <a class="btn" href=""
+                    ><i class="fa fa-shopping-cart"></i>Shop Now</a
+                  >
+                </div>
+              </div>
+              <div class="header-slider-item">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmVoP9fnCyw49aSx0NBdeGNo7NHAdyH8jbIl-HXdWbkeZyQeKECWDGKDNKp7VwgJetxL4&usqp=CAU"
+                  class="w-80"
+                  alt="Slider Image"
+                />
+                <div class="header-slider-caption">
+                  <p>Some text goes here that describes the image</p>
+                  <a class="btn" href=""
+                    ><i class="fa fa-shopping-cart"></i>Shop Now</a
+                  >
+                </div>
+              </div>
+              <div class="header-slider-item">
+                <img
+                  src="https://evzon.in/wp-content/uploads/2023/04/24eff732-b49d-48bd-958d-6b8a9269e434.jpg"
+                  alt="Slider Image"
+                  class="w-80"
+                />
+                <div class="header-slider-caption">
+                  <p>Some text goes here that describes the image</p>
+                  <a class="btn" href=""
+                    ><i class="fa fa-shopping-cart"></i>Shop Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="header-img">
+              <div class="img-item">
+                <img
+                  src="https://e7.pngegg.com/pngimages/316/765/png-clipart-car-jeep-tire-motor-vehicle-service-car-parts-vehicle-tire-surrounded-by-vehicle-parts-and-tools-artwork-car-accident-vintage-car.png"
+                  class="w-80"
+                />
+                <a class="img-text" href="">
+                  <p>Some text goes here that describes the image</p>
+                </a>
+              </div>
+              <div class="img-item">
+                <img
+                  src="https://w7.pngwing.com/pngs/260/445/png-transparent-automotive-engine-parts-automotive-engine-parts-car-parts-auto-parts.png"
+                  class="w-80"
+                />
+                <a class="img-text" href="">
+                  <p>Some text goes here that describes the image</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main Slider End -->
+
+    <!-- Brand Start -->
+    <div class="brand">
+      <div class="container-fluid">
+        <div class="brand-slider">
+          <div class="brand-item"><img src="img/brand-1.png" alt="" /></div>
+          <div class="brand-item"><img src="img/brand-2.png" alt="" /></div>
+          <div class="brand-item"><img src="img/brand-3.png" alt="" /></div>
+          <div class="brand-item"><img src="img/brand-4.png" alt="" /></div>
+          <div class="brand-item"><img src="img/brand-5.png" alt="" /></div>
+          <div class="brand-item"><img src="img/brand-6.png" alt="" /></div>
+        </div>
+      </div>
+    </div>
+    <!-- Brand End -->
+
+    <!-- Feature Start-->
+    <div class="feature">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-lg-3 col-md-6 feature-col">
+            <div class="feature-content">
+              <i class="fab fa-cc-mastercard"></i>
+              <h2>Secure Payment</h2>
+              <p>Lorem ipsum dolor sit amet consectetur elit</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 feature-col">
+            <div class="feature-content">
+              <i class="fa fa-truck"></i>
+              <h2>Worldwide Delivery</h2>
+              <p>Lorem ipsum dolor sit amet consectetur elit</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 feature-col">
+            <div class="feature-content">
+              <i class="fa fa-sync-alt"></i>
+              <h2>90 Days Return</h2>
+              <p>Lorem ipsum dolor sit amet consectetur elit</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 feature-col">
+            <div class="feature-content">
+              <i class="fa fa-comments"></i>
+              <h2>24/7 Support</h2>
+              <p>Lorem ipsum dolor sit amet consectetur elit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Feature End-->
+
+    <!-- Category Start-->
+    <div class="category">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="category-item ch-400">
+              <img
+                src="https://w7.pngwing.com/pngs/260/445/png-transparent-automotive-engine-parts-automotive-engine-parts-car-parts-auto-parts.png"
+              />
+              <a class="category-name" href="">
+                <p>Some text goes here that describes the image</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="category-item ch-250">
+              <img
+                src="data:image/jpeg;base64,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"
+              />
+              <a class="category-name" href="">
+                <p>Some text goes here that describes the image</p>
+              </a>
+            </div>
+            <div class="category-item ch-150">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7545BFV7VM2vDmtSy4n-uj6wqbljA42tYjaKFN8NDJ8i6te91AucfKBXQm00lKjQW6V0&usqp=CAU"
+              />
+              <a class="category-name" href="">
+                <p>Some text goes here that describes the image</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="category-item ch-150">
+              <img
+                src="https://m.media-amazon.com/images/I/61sG0PB5oFL._AC_UF1000,1000_QL80_.jpg"
+              />
+              <a class="category-name" href="">
+                <p>Some text goes here that describes the image</p>
+              </a>
+            </div>
+            <div class="category-item ch-250">
+              <img
+                src="https://hips.hearstapps.com/bpc.h-cdn.co/assets/16/14/84212407464_5237_1.jpg?resize=480:*"
+              />
+              <a class="category-name" href="">
+                <p>Some text goes here that describes the image</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="category-item ch-400">
+              <img
+                src="https://images-cdn.ubuy.co.in/634d15d7e39aa10d051fc9bf-custom-fit-for-bmw-car-steering-wheel.jpg"
+              />
+              <a class="category-name" href="">
+                <p>Some text goes here that describes the image</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Category End-->
+
+    <!-- Call to Action Start -->
+    <div class="call-to-action">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h1>call us for any queries</h1>
+          </div>
+          <div class="col-md-6">
+            <a href="tel:0123456789">+012-345-6789</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Call to Action End -->
+
+    <!-- Featured Product Start -->
+    <div class="featured-product product">
+      <div class="container-fluid">
+        <div class="section-header">
+          <h1>Featured Product</h1>
+        </div>
+        <div class="row align-items-center product-slider product-slider-4">
+          <div class="col-lg-3">
+            <div class="product-item">
+              <div class="product-title">
+                <a href="#">Product Name</a>
+                <div class="ratting">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="product-image">
+                <a href="product-detail.html">
+                  <img
+                    src="https://w7.pngwing.com/pngs/260/445/png-transparent-automotive-engine-parts-automotive-engine-parts-car-parts-auto-parts.png"
+                    alt="Product Image"
+                  />
+                </a>
+                <div class="product-action">
+                  <a href="#"><i class="fa fa-cart-plus"></i></a>
+                  <a href="#"><i class="fa fa-heart"></i></a>
+                  <a href="#"><i class="fa fa-search"></i></a>
+                </div>
+              </div>
+              <div class="product-price">
+                <h3><span>$</span>99</h3>
+                <a class="btn" href=""
+                  ><i class="fa fa-shopping-cart"></i>Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="product-item">
+              <div class="product-title">
+                <a href="#">Product Name</a>
+                <div class="ratting">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="product-image">
+                <a href="product-detail.html">
+                  <img
+                    src="https://w7.pngwing.com/pngs/260/445/png-transparent-automotive-engine-parts-automotive-engine-parts-car-parts-auto-parts.png"
+                    alt="Product Image"
+                  />
+                </a>
+                <div class="product-action">
+                  <a href="#"><i class="fa fa-cart-plus"></i></a>
+                  <a href="#"><i class="fa fa-heart"></i></a>
+                  <a href="#"><i class="fa fa-search"></i></a>
+                </div>
+              </div>
+              <div class="product-price">
+                <h3><span>$</span>99</h3>
+                <a class="btn" href=""
+                  ><i class="fa fa-shopping-cart"></i>Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="product-item">
+              <div class="product-title">
+                <a href="#">Product Name</a>
+                <div class="ratting">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="product-image">
+                <a href="product-detail.html">
+                  <img
+                    src="https://w7.pngwing.com/pngs/260/445/png-transparent-automotive-engine-parts-automotive-engine-parts-car-parts-auto-parts.png"
+                    alt="Product Image"
+                  />
+                </a>
+                <div class="product-action">
+                  <a href="#"><i class="fa fa-cart-plus"></i></a>
+                  <a href="#"><i class="fa fa-heart"></i></a>
+                  <a href="#"><i class="fa fa-search"></i></a>
+                </div>
+              </div>
+              <div class="product-price">
+                <h3><span>$</span>99</h3>
+                <a class="btn" href=""
+                  ><i class="fa fa-shopping-cart"></i>Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="product-item">
+              <div class="product-title">
+                <a href="#">Product Name</a>
+                <div class="ratting">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="product-image">
+                <a href="product-detail.html">
+                  <img
+                    src="https://w7.pngwing.com/pngs/260/445/png-transparent-automotive-engine-parts-automotive-engine-parts-car-parts-auto-parts.png"
+                    alt="Product Image"
+                  />
+                </a>
+                <div class="product-action">
+                  <a href="#"><i class="fa fa-cart-plus"></i></a>
+                  <a href="#"><i class="fa fa-heart"></i></a>
+                  <a href="#"><i class="fa fa-search"></i></a>
+                </div>
+              </div>
+              <div class="product-price">
+                <h3><span>$</span>99</h3>
+                <a class="btn" href=""
+                  ><i class="fa fa-shopping-cart"></i>Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="product-item">
+              <div class="product-title">
+                <a href="#">Product Name</a>
+                <div class="ratting">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="product-image">
+                <a href="product-detail.html">
+                  <img
+                    src="https://w7.pngwing.com/pngs/260/445/png-transparent-automotive-engine-parts-automotive-engine-parts-car-parts-auto-parts.png"
+                    alt="Product Image"
+                  />
+                </a>
+                <div class="product-action">
+                  <a href="#"><i class="fa fa-cart-plus"></i></a>
+                  <a href="#"><i class="fa fa-heart"></i></a>
+                  <a href="#"><i class="fa fa-search"></i></a>
+                </div>
+              </div>
+              <div class="product-price">
+                <h3><span>$</span>99</h3>
+                <a class="btn" href=""
+                  ><i class="fa fa-shopping-cart"></i>Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Featured Product End -->
+
+    <!-- Newsletter Start -->
+    <div class="newsletter">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Subscribe Our Newsletter</h1>
+          </div>
+          <div class="col-md-6">
+            <div class="form">
+              <input type="email" value="Your email here" />
+              <button>Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Newsletter End -->
+
+    <!-- Recent Product Start -->
+    <div class="recent-product product">
+      <div class="container-fluid">
+        <div class="section-header">
+          <h1>Recent Product</h1>
+        </div>
+        <div class="row align-items-center product-slider product-slider-4">
+          <div class="col-lg-3">
+            <div class="product-item">
+              <div class="product-title">
+                <a href="#">Product Name</a>
+                <div class="ratting">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="product-image">
+                <a href="product-detail.html">
+                  <img
+                    src="https://static.toiimg.com/thumb/msid-88571361,width-1280,resizemode-4/88571361.jpg"
+                    alt="Product Image"
+                  />
+                </a>
+                <div class="product-action">
+                  <a href="#"><i class="fa fa-cart-plus"></i></a>
+                  <a href="#"><i class="fa fa-heart"></i></a>
+                  <a href="#"><i class="fa fa-search"></i></a>
+                </div>
+              </div>
+              <div class="product-price">
+                <h3><span>$</span>99</h3>
+                <a class="btn" href=""
+                  ><i class="fa fa-shopping-cart"></i>Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="product-item">
+              <div class="product-title">
+                <a href="#">Product Name</a>
+                <div class="ratting">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="product-image">
+                <a href="product-detail.html">
+                  <img
+                    src="https://static.toiimg.com/thumb/msid-88571361,width-1280,resizemode-4/88571361.jpg"
+                    alt="Product Image"
+                  />
+                </a>
+                <div class="product-action">
+                  <a href="#"><i class="fa fa-cart-plus"></i></a>
+                  <a href="#"><i class="fa fa-heart"></i></a>
+                  <a href="#"><i class="fa fa-search"></i></a>
+                </div>
+              </div>
+              <div class="product-price">
+                <h3><span>$</span>99</h3>
+                <a class="btn" href=""
+                  ><i class="fa fa-shopping-cart"></i>Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="product-item">
+              <div class="product-title">
+                <a href="#">Product Name</a>
+                <div class="ratting">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="product-image">
+                <a href="product-detail.html">
+                  <img
+                    src="https://static.toiimg.com/thumb/msid-88571361,width-1280,resizemode-4/88571361.jpg"
+                    alt="Product Image"
+                  />
+                </a>
+                <div class="product-action">
+                  <a href="#"><i class="fa fa-cart-plus"></i></a>
+                  <a href="#"><i class="fa fa-heart"></i></a>
+                  <a href="#"><i class="fa fa-search"></i></a>
+                </div>
+              </div>
+              <div class="product-price">
+                <h3><span>$</span>99</h3>
+                <a class="btn" href=""
+                  ><i class="fa fa-shopping-cart"></i>Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="product-item">
+              <div class="product-title">
+                <a href="#">Product Name</a>
+                <div class="ratting">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="product-image">
+                <a href="product-detail.html">
+                  <img
+                    src="https://static.toiimg.com/thumb/msid-88571361,width-1280,resizemode-4/88571361.jpg"
+                    alt="Product Image"
+                  />
+                </a>
+                <div class="product-action">
+                  <a href="#"><i class="fa fa-cart-plus"></i></a>
+                  <a href="#"><i class="fa fa-heart"></i></a>
+                  <a href="#"><i class="fa fa-search"></i></a>
+                </div>
+              </div>
+              <div class="product-price">
+                <h3><span>$</span>99</h3>
+                <a class="btn" href=""
+                  ><i class="fa fa-shopping-cart"></i>Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="product-item">
+              <div class="product-title">
+                <a href="#">Product Name</a>
+                <div class="ratting">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="product-image">
+                <a href="product-detail.html">
+                  <img
+                    src="https://static.toiimg.com/thumb/msid-88571361,width-1280,resizemode-4/88571361.jpg"
+                    alt="Product Image"
+                  />
+                </a>
+                <div class="product-action">
+                  <a href="#"><i class="fa fa-cart-plus"></i></a>
+                  <a href="#"><i class="fa fa-heart"></i></a>
+                  <a href="#"><i class="fa fa-search"></i></a>
+                </div>
+              </div>
+              <div class="product-price">
+                <h3><span>$</span>99</h3>
+                <a class="btn" href=""
+                  ><i class="fa fa-shopping-cart"></i>Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Recent Product End -->
+
+    <!-- Review Start -->
+    <div class="review">
+      <div class="container-fluid">
+        <div class="row align-items-center review-slider normal-slider">
+          <div class="col-md-6">
+            <div class="review-slider-item">
+              <div class="review-img">
+                <img src="img/review-1.jpg" alt="Image" />
+              </div>
+              <div class="review-text">
+                <h2>Customer Name</h2>
+                <h3>Profession</h3>
+                <div class="ratting">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur vitae nunc eget leo finibus luctus et vitae lorem
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="review-slider-item">
+              <div class="review-img">
+                <img src="img/review-2.jpg" alt="Image" />
+              </div>
+              <div class="review-text">
+                <h2>Customer Name</h2>
+                <h3>Profession</h3>
+                <div class="ratting">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur vitae nunc eget leo finibus luctus et vitae lorem
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="review-slider-item">
+              <div class="review-img">
+                <img src="img/review-3.jpg" alt="Image" />
+              </div>
+              <div class="review-text">
+                <h2>Customer Name</h2>
+                <h3>Profession</h3>
+                <div class="ratting">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur vitae nunc eget leo finibus luctus et vitae lorem
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Review End -->
+
+    <!-- Footer Start -->
+    <div class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h2>Get in Touch</h2>
+              <div class="contact-info">
+                <p>
+                  <i class="fa fa-map-marker"></i>123 E Store, Los Angeles, USA
+                </p>
+                <p><i class="fa fa-envelope"></i>email@example.com</p>
+                <p><i class="fa fa-phone"></i>+123-456-7890</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h2>Follow Us</h2>
+              <div class="contact-info">
+                <div class="social">
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                  <a href=""><i class="fab fa-linkedin-in"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h2>Company Info</h2>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Investors Relation</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h2>Purchase Info</h2>
+              <ul>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Disclaimer</a></li>
+                <li><a href="#">Term of Use</a></li>
+                <li><a href="#">Buyer Policy</a></li>
+                <li><a href="#">Seller Policy</a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row payment align-items-center">
+          <div class="col-md-6">
+            <div class="payment-method">
+              <h2>We Accept:</h2>
+              <img src="img/payment-method.png" alt="Payment Method" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="payment-security">
+              <h2>Secured By:</h2>
+              <img src="img/godaddy.svg" alt="Payment Security" />
+              <img src="img/norton.svg" alt="Payment Security" />
+              <img src="img/ssl.svg" alt="Payment Security" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Footer Bottom Start -->
+    <!-- <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 copyright">
+            <p>
+              Copyright &copy; <a href="https://htmlcodex.com">HTML Codex</a>.
+              All Rights Reserved
+            </p>
+          </div>
+
+          <div class="col-md-6 template-by">
+            <p>Template By <a href="https://htmlcodex.com">HTML Codex</a></p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- Footer Bottom End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
